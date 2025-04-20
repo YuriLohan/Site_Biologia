@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Biologia</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -14,29 +15,35 @@
         <section id = "topicos">
             <nav>
                 <div class = "topico">
-                    <a href="#1bim">
-                        <p>1º Bimestre</p>
+                        <p onclick="mostrarConteudo(1)">1º Bimestre</p>
                     </a>
                 </div>
                 <div class="topico">
-                    <a href="#2bim">
-                        <p>2º Bimestre</p>
+                        <p onclick="mostrarConteudo(2)">2º Bimestre</p>
                     </a>
                 </div>
                 <div class = "topico"> 
-                    <a href="#3bim">
-                        <p>3º Bimestre</p>
+                        <p onclick="mostrarConteudo(3)">3º Bimestre</p>
                     </a>
                 </div>
                 <div class="topico">
-                    <a href="#4bim">
-                        <p>4º  Bimestre</p>
+                        <p onclick="mostrarConteudo(4)">4º  Bimestre</p>
                     </a>
                 </div>
             </nav>
         </section>
     </header>
     <main>
+        <section id = oqueBiologia>
+            <div id = "biologiaConteudo">
+                <h1>O que é Biologia?</h1>
+                <div id = "biologiaConteudoMais">
+                    <div>
+                        <p class="centro">A biologia é a ciência que estuda os seres vivos, suas interações e processos vitais. Ela abrange diversas áreas, como zoologia, botânica, microbiologia, ecologia e genética. A biologia busca entender a estrutura, função, crescimento, evolução e distribuição dos organismos, além de investigar as relações entre eles e o meio ambiente.</p>
+                        <p class="centro">Essa ciência é fundamental para compreender a diversidade da vida na Terra e os mecanismos que sustentam os ecossistemas. A biologia também desempenha um papel crucial em áreas como medicina, agricultura e conservação ambiental.</p>
+                        <p class="centro">Além disso, a biologia é uma disciplina em constante evolução, com novas descobertas e avanços tecnológicos que ampliam nosso conhecimento sobre os seres vivos e suas interações.</p>
+
+        </section>
         <section id = "1bim">
             <section id="evbiologica">
                 <div id = "evbiologicaConteudo">
@@ -179,10 +186,112 @@
             </section>
         </section>
 
-        <section id = "3bim">
+        <section id="3bim">
+        <section id="homeostase">
+            <div id = "homConteudo">
+                <h1>Homeostase</h1>
+                <div id = "homConteudoMais">
+                    <div class = "text">
+                        <p>A homeostase é o processo pelo qual o corpo mantém um ambiente interno estável e equilibrado, apesar das mudanças no ambiente externo. Isso inclui a regulação de temperatura, pH, níveis de glicose, pressão arterial, entre outros. O sistema nervoso e o sistema endócrino são essenciais para monitorar e ajustar essas variáveis, garantindo o funcionamento adequado do organismo.
+                        </p>
+                        <p>A regulação da homeostase é crucial para a sobrevivência, pois permite que o organismo se adapte a diferentes condições externas e internas, mantendo o funcionamento adequado das células e sistemas.
+                        </p>
+                        <p>Exemplos de processos homeostáticos incluem a regulação da temperatura corporal (termorregulação), controle do nível de glicose no sangue (glicemia) e equilíbrio hídrico (osmose).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section id="sistDisgestorio">
+            <div id = "sistConteudo">
+                <h1>Sistema Digestório</h1>
+                <div id = "sistConteudoMais">
+                    <div class = "text">
+                        <p>O sistema digestório é responsável pela quebra dos alimentos e absorção de nutrientes essenciais para o corpo. Ele inclui órgãos como a boca, esôfago, estômago, intestinos (delgado e grosso), fígado e pâncreas. O processo de digestão envolve a mastigação, a ação de enzimas digestivas, a absorção de nutrientes e a eliminação de resíduos.
+                        </p>
+                        <p>O sistema digestório desempenha um papel fundamental na conversão de alimentos em energia e na manutenção da saúde geral do organismo. Distúrbios digestivos, como gastrite, refluxo e síndrome do intestino irritável, podem afetar a eficiência desse sistema e a absorção de nutrientes.</p>
+                        <p>Além disso, o sistema digestório também está envolvido na regulação do apetite e no equilíbrio de fluidos e eletrólitos no corpo.</p>
+                    </div>
+    
+                </div>
+            </div>
         </section>
+        <section id="sistCirculatorio">
+            <div id = "cirConteudo">
+                <h1>Sistema Circulatório</h1>
+                <div id = "cirConteudoMais">
+                    <div class = "text">
+                        <p>O sistema circulatório é responsável por transportar sangue, nutrientes, gases e resíduos pelo corpo. Ele é composto pelo coração, vasos sanguíneos (artérias, veias e capilares) e o próprio sangue. O coração bombeia o sangue para todo o corpo, fornecendo oxigênio e nutrientes para as células e removendo resíduos, como dióxido de carbono e ureia. Esse sistema é fundamental para manter a homeostase e o funcionamento eficiente dos órgãos e tecidos.</p>
+                        <p>O sistema circulatório também desempenha um papel importante na defesa do organismo, transportando células do sistema imunológico e anticorpos para combater infecções. Além disso, ele regula a temperatura corporal e o equilíbrio de fluidos e eletrólitos.</p>
+                        <p>Distúrbios circulatórios, como hipertensão, aterosclerose e doenças cardíacas, podem afetar a eficiência desse sistema e levar a complicações graves.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sistRespiratorio">
+            <div id = "respConteudo">
+                <h1>Sistema Respiratório</h1>
+                <div id = "respConteudoMais">
+                    <div class = "text">
+                        <p>O sistema respiratório é responsável pela troca de gases (oxigênio e dióxido de carbono) entre o corpo e o ambiente. A respiração ocorre principalmente nos pulmões, onde o oxigênio é absorvido pelo sangue e o dióxido de carbono é expelido. O metabolismo energético é o processo pelo qual o corpo converte nutrientes (como carboidratos, gorduras e proteínas) em energia (ATP). A respiração celular, que ocorre nas mitocôndrias, usa o oxigênio para oxidar os nutrientes e gerar ATP.
+                        </p>
+                        <p>O sistema respiratório é composto pelas vias aéreas (nariz, faringe, laringe, traqueia e brônquios) e os pulmões. A ventilação pulmonar é o processo de entrada e saída de ar dos pulmões, que ocorre por meio da contração e relaxamento dos músculos respiratórios (diafragma e músculos intercostais). Distúrbios respiratórios, como asma, bronquite e pneumonia, podem afetar a eficiência desse sistema e a troca gasosa.</p>
+                        <p>Além disso, o sistema respiratório também desempenha um papel importante na regulação do pH sanguíneo e na defesa contra patógenos e partículas estranhas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
         <section id = "4bim">
+            <section id="sistUrinario">
+                <div id = "UriConteudo">
+                    <h1>Sistema Urinário</h1>
+                    <div id = "uriConteudoMais">
+                        <div class = "text">
+                            <p>O sistema urinário é responsável pela filtração do sangue para eliminar resíduos e manter o equilíbrio de água, sais e pH no corpo. Ele é composto pelos rins, ureteres, bexiga urinária e uretra. Os rins filtram o sangue, removendo substâncias tóxicas e excedentes, que são transformadas em urina. A urina é armazenada na bexiga até ser eliminada pela uretra. Esse sistema também regula a pressão arterial e os níveis de eletrólitos no organismo.
+                            </p>
+                            <p>Distúrbios urinários, como infecções do trato urinário, pedras nos rins e insuficiência renal, podem afetar a função desse sistema e levar a complicações graves. A manutenção da saúde do sistema urinário é essencial para o bem-estar geral do organismo.</p>
+                            <p>Além disso, o sistema urinário desempenha um papel importante na regulação do equilíbrio ácido-base e na excreção de hormônios e metabólitos.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+            <section id="sistEndocrino">
+                <div id = "endConteudo">
+                    <h1>Sistema Endócrino</h1>
+                    <div id = "endConteudoMais">
+                        <div class = "text">
+                            <p>O sistema endócrino é composto por glândulas que secretam hormônios, que são substâncias químicas responsáveis pela regulação de várias funções do corpo, como metabolismo, crescimento, desenvolvimento, reprodução e equilíbrio de substâncias no sangue. As principais glândulas endócrinas incluem a hipófise, tireoide, paratireoides, glândulas adrenais, pâncreas, gônadas (testículos e ovários) e pineal. Esses hormônios agem sobre órgãos e tecidos específicos para regular processos fisiológicos.</p>
+                            <p>O sistema endócrino trabalha em conjunto com o sistema nervoso para manter a homeostase e responder a estímulos externos. Distúrbios endócrinos, como diabetes, hipertireoidismo e síndrome de Cushing, podem afetar a produção e ação dos hormônios, levando a complicações de saúde. A compreensão do sistema endócrino é essencial para o diagnóstico e tratamento de doenças hormonais.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sistNervoso">
+                <div id = "nerConteudo">
+                    <h1>Sistema Nervoso</h1>
+                    <div id = "nerConteudoMais">
+                        <div class = "text">
+                            <p>O sistema nervoso é responsável por coordenar as funções do corpo, transmitindo sinais elétricos e químicos entre o cérebro, a medula espinhal e outras partes do corpo. Ele é dividido em duas partes: o sistema nervoso central (SNC), que inclui o cérebro e a medula espinhal, e o sistema nervoso periférico (SNP), que conecta o SNC ao resto do corpo. O sistema nervoso controla movimentos voluntários e involuntários, além de ser essencial para os sentidos, memória, emoções e funções automáticas do corpo</p>
+                            <p>O sistema nervoso é composto por neurônios (células nervosas) e células gliais (células de suporte). Os neurônios transmitem impulsos elétricos, enquanto as células gliais desempenham funções de suporte, proteção e nutrição dos neurônios. Distúrbios do sistema nervoso, como esclerose múltipla, Parkinson e Alzheimer, podem afetar a função neurológica e a qualidade de vida.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sistLocomotor">
+                <div id = "locConteudo">
+                    <h1>Sistema Locomotor</h1>
+                    <div id = "locConteudoMais">
+                        <div class = "text">
+                            <h2> Sistema esquelético</h2>
+                            <p>O sistema esquelético é composto pelos ossos, articulações e cartilagens. Ele fornece estrutura e suporte ao corpo, protege órgãos internos, armazena minerais e é responsável pela produção de células sanguíneas (medula óssea). Existem 206 ossos no corpo humano, que estão unidos por articulações, permitindo movimento e flexibilidade.
+                            </p>
+                            <h2>Sistema muscular</h2>
+                            <p>O sistema muscular é responsável pelos movimentos do corpo. Ele é composto por três tipos de músculos: musculatura esquelética (responsável pelos movimentos voluntários), musculatura lisa (encontrada nos órgãos internos e responsável por movimentos involuntários, como os do trato gastrointestinal) e musculatura cardíaca (presente no coração e responsável pela contração do músculo cardíaco). A contração muscular é essencial para a movimentação de partes do corpo e a realização de várias funções fisiológicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
