@@ -1,5 +1,6 @@
-/*Fonte DM Serif Text*/
+/*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Configurações gerais */
 :root{
@@ -17,8 +18,14 @@
         
 }
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "DM Serif Text", 'Times New Roman', Times, serif; 
     padding: 15px;
+}
+
+p{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-indent: 15px;
+    padding: 10px;
 }
 body{
     background-image: url(https://img.freepik.com/free-photo/microscopic-germs-pathogens_23-2149005128.jpg);
@@ -44,7 +51,6 @@ img{
     color: #fffff7;
     font-size: 4rem;
     background-color: #005213;
-    font-family: "DM Serif Text", serif; 
 }
 
 /*Configurações do Nav*/
@@ -93,9 +99,9 @@ main section img{
     border: #66bb7a 10px solid;
     padding-bottom: 10px;
 }
-section[id$="bim"]{
+/*section[id$="bim"]{
     display: none;
-}
+}*/
 div[id$="Conteudo"]{
     margin: 20px;
     padding: 10px;
@@ -109,6 +115,17 @@ div[id$="Conteudo"] h1{
 }
 div[id$="ConteudoMais"]{
     display: flex;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.text h2{
+    margin: 10px;
+}
+.text ul{
+    list-style: none;
 }
 /*Configurações Footer*/
 footer{
