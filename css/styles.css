@@ -1,0 +1,119 @@
+/*Fonte DM Serif Text*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+/* Configurações gerais */
+:root{
+    --var1:#53A36B;
+    --var2:#C8DCBD;
+    --var3:#8ec188;
+    --var4:#73B25C;
+    --var5:#005213;
+    }
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+        
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+body{
+    background-image: url(https://img.freepik.com/free-photo/microscopic-germs-pathogens_23-2149005128.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    background-size: cover;
+    
+}
+main,#topicos{
+    max-width: 80%;
+    margin: auto;
+}
+img{
+    display: flex;
+    margin: auto;
+    
+}
+
+/*Configurações no header*/
+#inicio h1{
+    padding-bottom: 25px;
+    text-align: center;
+    color: #fffff7;
+    font-size: 4rem;
+    background-color: #005213;
+    font-family: "DM Serif Text", serif; 
+}
+
+/*Configurações do Nav*/
+#topicos{
+    background-color: #73B25C;
+    padding: 25px;
+    
+}
+#topicos nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#topicos a {
+    text-decoration: none;
+    color: #005213;
+}
+#topicos p{
+    padding: 10px;
+    background-color: var(--var2);
+    margin: 5px;
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#topicos p:hover{
+    background-color: #dbddda;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/*Configurações do Main*/
+main{
+    background-color: var(--var3);
+    padding: 20px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius: 50px;
+}
+main h1{
+    text-align: center;
+}
+main section img{
+    border: #66bb7a 10px solid;
+    padding-bottom: 10px;
+}
+section[id$="bim"]{
+    display: none;
+}
+div[id$="Conteudo"]{
+    margin: 20px;
+    padding: 10px;
+    background-color: #66bb7a;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+div[id$="Conteudo"] h1{
+    font-size: 2.5rem;
+}
+div[id$="ConteudoMais"]{
+    display: flex;
+}
+/*Configurações Footer*/
+footer{
+    text-align: center;
+    color: #fffff7;
+    background-color: #005213;
+    font-family: "DM Serif Text", serif; 
+}
