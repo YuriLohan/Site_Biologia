@@ -47,12 +47,18 @@ img{
 }
 
 /*Configurações no header*/
+#inicio{
+    background-color: #005213;
+}
 #inicio h1{
-    padding-bottom: 25px;
+    padding-bottom: 0;
     text-align: center;
     color: #fffff7;
-    font-size: 4rem;
-    background-color: #005213;
+    font-size: 4rem
+}
+#inicio p{
+    color:#fffff7;
+    text-align: center;
 }
 
 /*Configurações do Nav*/
