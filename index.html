@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Biologia</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -306,21 +305,6 @@
     <footer>
         <p>&copy; 2025 - Site Desenvolvido por: Kauan Eric, José Pinheiro, Nycholas Alves e Yuri Lohan. Todos os Direitos Reservados</p>
     </footer>
-    <script>
-    function aparecerConteudo(numero){
-    const content = document.getElementById(`${numero}bim`)
-    const sections = document.querySelectorAll('section[id$="bim"]')
-            
-    if (content.style.display === 'none'|| content.style.display === '') {
-        
-        sections.forEach(section =>{
-            section.style.display = 'none'
-        })
-
-        content.style.display = 'block'
-    } else {
-        content.style.display = 'none'
-    }}
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
