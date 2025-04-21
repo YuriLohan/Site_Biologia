@@ -27,6 +27,12 @@ p{
     text-indent: 15px;
     padding: 10px;
 }
+.centro{
+    text-align: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-indent: 15px;
+    padding: 10px;
+}
 body{
     background-image: url(https://img.freepik.com/free-photo/microscopic-germs-pathogens_23-2149005128.jpg);
     background-attachment: fixed;
@@ -65,7 +71,7 @@ img{
     align-items: center;
     justify-content: center;
 }
-#topicos a {
+#topicos {
     text-decoration: none;
     color: #005213;
 }
