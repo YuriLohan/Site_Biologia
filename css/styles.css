@@ -27,17 +27,13 @@ p{
     text-indent: 15px;
     padding: 10px;
 }
-.centro{
-    text-align: center;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    text-indent: 15px;
-    padding: 10px;
-}
 body{
     background-image: url(https://img.freepik.com/free-photo/microscopic-germs-pathogens_23-2149005128.jpg);
     background-attachment: fixed;
     width: 100%;
     background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
     
 }
 main,#topicos{
@@ -102,8 +98,8 @@ main h1{
     text-align: center;
 }
 main section img{
-    border: #66bb7a 10px solid;
-    padding-bottom: 10px;
+    max-width: 100%;
+    height: auto;
 }
 section[id$="bim"]{
     display: none;
@@ -121,6 +117,7 @@ div[id$="Conteudo"] h1{
 }
 div[id$="ConteudoMais"]{
     display: flex;
+    flex-direction: row;
 }
 .text{
     display: flex;
@@ -140,3 +137,38 @@ footer{
     background-color: #005213;
     font-family: "DM Serif Text", serif; 
 }
+@media screen and (max-width: 1024px) {
+    main, #topicos {
+        max-width: 95%;
+    }
+
+    div[id$="ConteudoMais"] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    main section img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    #topicos nav {
+        flex-wrap: wrap;
+    }
+
+    #topicos p {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    #inicio h1 {
+        font-size: 2.5rem;
+    }
+}
+
