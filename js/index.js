@@ -1,4 +1,4 @@
-function aparecerConteudo(numero){
+function mostrarConteudo(numero){
     const content = document.getElementById(`${numero}bim`)
     const sections = document.querySelectorAll('section[id$="bim"]')
             
