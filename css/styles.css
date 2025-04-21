@@ -99,9 +99,9 @@ main section img{
     border: #66bb7a 10px solid;
     padding-bottom: 10px;
 }
-/*section[id$="bim"]{
+section[id$="bim"]{
     display: none;
-}*/
+}
 div[id$="Conteudo"]{
     margin: 20px;
     padding: 10px;

@@ -14,29 +14,29 @@
         <section id = "topicos">
             <nav>
                 <div class = "topico">
-                    <a href="#1bim">
-                        <p>1º Bimestre</p>
+                    <a href="#">
+                        <p onclick="aparecerConteudo(1)">1º Bimestre</p>
                     </a>
                 </div>
                 <div class="topico">
-                    <a href="#2bim">
-                        <p>2º Bimestre</p>
+                    <a href="#">
+                        <p onclick="aparecerConteudo(2)">2º Bimestre</p>
                     </a>
                 </div>
                 <div class = "topico"> 
-                    <a href="#3bim">
-                        <p>3º Bimestre</p>
+                    <a href="#">
+                        <p onclick="aparecerConteudo(3)">3º Bimestre</p>
                     </a>
                 </div>
                 <div class="topico">
-                    <a href="#4bim">
-                        <p>4º  Bimestre</p>
+                    <a href="#">
+                        <p onclick="aparecerConteudo(4)">4º  Bimestre</p>
                     </a>
                 </div>
             </nav>
         </section>
     </header>
-    <main>
+    <main id = "main">
         <section id = "1bim">
             <section id="evbiologica">
                 <div id = "evbiologicaConteudo">
@@ -188,5 +188,20 @@
     <footer>
         <p>&copy; 2025 - Site Desenvolvido por: Kauan Eric, José Pinheiro, Nycholas Alves e Yuri Lohan. Todos os Direitos Reservados</p>
     </footer>
+    <script>
+        function aparecerConteudo(numero){
+            const content = document.getElementById(`${numero}bim`);
+            const sections = document.querySelectorAll('section[id$="bim"]');
+            
+    if (content.style.display === 'none'|| content.style.display === '') {
+                sections.forEach(section =>{
+                    section.style.display = 'none'
+                })
+                content.style.display = 'block'; // Mostra o conteúdo
+    } else {
+        content.style.display = 'none'; // Esconde o conteúdo
+    }
+        }
+    </script>
 </body>
 </html>
